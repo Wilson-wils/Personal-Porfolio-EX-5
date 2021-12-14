@@ -21,7 +21,7 @@ h1, h2 {
     padding: 0 20px;
 }
 
-#navbar {
+.navbar {
     width: 100%;
     background-color: firebrick;
     position: fixed;
@@ -66,7 +66,7 @@ h1, h2 {
     transition: all .5 ease-in-out;
 }
 
-#projects {
+.projects {
     background-color:honeydew;
     padding: 20px 0;
     min-height: 100vh;
@@ -74,18 +74,18 @@ h1, h2 {
     text-align: center;
 }
 
-#projects .project-tile {
+.projects .project-tile {
     padding-bottom: 30px;
     padding-top: 70px;
 }
 
-#projects .cards {
+.projects .cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
 } 
 
-#projects .cards .card {
+.projects .cards .card {
     display: block;
     padding-bottom: 50px;
     width: 100%;
@@ -93,7 +93,7 @@ h1, h2 {
     transition: all 1s ease-in-out;
 }
 
-#projects .cards .card figcaption {
+.projects .cards .card figcaption {
     position: absolute;
     z-index: 2;
     color: white;
@@ -106,42 +106,49 @@ h1, h2 {
     background-color: rgb(0,0,0,.8);
 }
 
-#contact {
+.project-image {
+    width: 800px;
+    height: 500px;
+}
+
+.contact {
     color: aliceblue;
     display: flex;
     min-height: 80vh;
     align-items: center;
     text-align: center;
-    transition: all .5 ease-in-out;
+    transition: .5;
+    transition-duration: .5s;
 }
 
-#contact:hover {
-    transform: scale(1.5);
+.contact:hover {
+    transform:scale(1.1);
 }
 
-#contact h2 {
+.contact h2 {
     margin-bottom: 0;
 }
 
-#contact ul {
+.contact ul {
     padding: 0;
     font-size: 30px;
     list-style: none;
     width: 100%;
 }
 
-#contact ul li{
+.contact ul li{
     display: inline-block;
     margin-right: 40px;
     margin-bottom: 15px;
-    transition: all .5 ease-in-out;
+    transition: .5s;
+    transition-duration: .3s;
 }
 
-#contact ul li:hover{
-    transform: scale(1.5);
+.contact ul li:hover{
+    transform: scale(1.2);
 }
 
-#contact ul li a {
+.contact ul li a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -157,12 +164,12 @@ h1, h2 {
         background-color: coral;
         color: firebrick;
     }
-    #projects .cards .card{
+    .projects .cards .card{
         grid-template-columns: 1fr 1fr;
     }
 }
 @media (min-width: 900px) {
-    #projects .cards .card{
+    .projects .cards .card{
     grid-template-columns: 1fr 1fr 1fr;
     }
 }
