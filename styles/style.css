@@ -71,12 +71,12 @@ h1, h2 {
     padding: 20px 0;
     min-height: 100vh;
     align-items: center;
-    text-align: center;
+    display: flex;
 }
 
 .projects .project-tile {
     padding-bottom: 30px;
-    padding-top: 70px;
+    padding-top: 73px;
 }
 
 .projects .cards {
@@ -103,12 +103,14 @@ h1, h2 {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    background-color: rgb(0,0,0,.8);
+    background-color: rgb(0,0,0,.7);
 }
 
 .project-image {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .contact {
@@ -118,7 +120,7 @@ h1, h2 {
     align-items: center;
     text-align: center;
     transition: .5;
-    transition-duration: .5s;
+    transition-duration: all .5s ease-in-out;
 }
 
 .contact:hover {
@@ -164,12 +166,12 @@ h1, h2 {
         background-color: coral;
         color: firebrick;
     }
-    .projects .cards .card{
+    .projects .cards {
         grid-template-columns: 1fr 1fr;
     }
 }
 @media (min-width: 900px) {
-    .projects .cards .card{
+    .projects .cards {
     grid-template-columns: 1fr 1fr 1fr;
     }
 }
